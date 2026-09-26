@@ -1,5 +1,11 @@
 # INST737 Machine Learning Labs
 
+![Python](docs/readme/badges/python-3776AB.svg)
+![Matplotlib](docs/readme/badges/matplotlib.svg)
+![pandas](docs/readme/badges/pandas-150458.svg)
+![NumPy](docs/readme/badges/numpy-013243.svg)
+![scikit-learn](docs/readme/badges/scikitlearn-F7931E.svg)
+
 Two tutorial based Python exercises exploring how training choices affect model evaluation. Built for INST737 at the University of Maryland.
 
 ## My work
@@ -14,6 +20,12 @@ I implemented the train/test split and model evaluation exercises: a housing reg
 ![Classification report from a saved decision tree tutorial run, showing uneven performance across the three classes.](docs/readme/preview.jpg)
 
 A cropped output capture retained in my portfolio. It documents a previous tutorial run, not a new benchmark. The class level report makes errors visible that an overall accuracy score can hide.
+
+## Reading the results
+
+The housing exercise prints training and test R² separately, making it possible to compare performance on fitted and held out data. The decision tree exercise reports each class separately as well as overall accuracy. In the saved output above, the balance class has zero recall: a useful reminder to inspect minority classes before interpreting a single headline score.
+
+Both exercises use fixed split seeds in the source. They are small tutorial comparisons rather than a broad search for the best model.
 
 ## Run locally
 
